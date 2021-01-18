@@ -6,6 +6,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
+<iframe frameborder="0" width="800" height="600" src="https://data.opendatasoft.com/map/embed/liste_des_fromages_francais2/?&static=false&scrollWheelZoom=false"></iframe>
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
