@@ -2,6 +2,8 @@
 
 ### Présentation du jeu de données
 
+Ce jeu de données réunit la liste de 338 spécialités fromagères françaises.
+
 <iframe src="https://data.opendatasoft.com/explore/embed/dataset/fromagescsv-fromagescsv@public/table/?disjunctive.fromage&static=false&datasetcard=false" width="400" height="300" frameborder="0"></iframe>
 
 ### Les fromages selon le type de lait
