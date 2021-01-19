@@ -13,8 +13,7 @@ Ce jeu de données réunit la liste de 338 spécialités fromagères françaises
 ### Datavisualisation des fromages selon leur région de production
 
 
-Voici une datavisualisation qui présente les fromages de France selon leur région de production.
-
+Voici une datavisualisation qui présente les fromages de France selon leur région de production. On remarque que la Savoie est la région qui produit le plus de fromage en France.
 
 
 <iframe frameborder="0" width="800" height="600" src="https://data.opendatasoft.com/map/embed/liste_des_fromages_francais2/?&static=false&scrollWheelZoom=false"></iframe>
