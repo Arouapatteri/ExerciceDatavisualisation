@@ -36,3 +36,15 @@ SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
   OPTIONAL { ?peinture wdt:P18 ?image. }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 }
+### avec en option (via OPTIONAL) les collections/lieux de conservation
+
+select DISTINCT ?peinture ?peintureLabel ?image ?localisation ?localisationLabel
+where {
+ ?peinture wdt:P170 wd:Q296.
+ ?peinture wdt:P18 ?image.
+OPTIONAL {?peinture wdt:P195 ?localisation
+}  
+  
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language "fr,en"}
+}
