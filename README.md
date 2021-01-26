@@ -20,7 +20,7 @@ Voici une datavisualisation qui présente les fromages de France selon leur rég
 
 ## Requête WikiData
 
-### juste les peintures de monet : 
+### Les peintures de Monet
 
 select distinct ?peinture
 where {
@@ -28,7 +28,7 @@ where {
     ?peinture wdt:P170 wd:Q296 .
 }
 
-### avec les labels (via le service wikibase:label) et les images associées
+### Les peintures de Monet avec les labels (via le service wikibase:label) et les images associées 
 
 SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
   ?peinture (wdt:P31/(wdt:P279*)) wd:Q3305213;
@@ -36,7 +36,7 @@ SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
   OPTIONAL { ?peinture wdt:P18 ?image. }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 }
-### avec en option (via OPTIONAL) les collections/lieux de conservation
+### Les peintures de Monet avec en option (via OPTIONAL) les collections/lieux de conservation
 
 select DISTINCT ?peinture ?peintureLabel ?image ?localisation ?localisationLabel
 where {
