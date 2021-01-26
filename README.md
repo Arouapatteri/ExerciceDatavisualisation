@@ -46,5 +46,5 @@ OPTIONAL {?peinture wdt:P195 ?localisation
 }  
   
 SERVICE wikibase:label {
-bd:serviceParam wikibase:language "fr,en"}
+bd:serviceParam wikibase:language "fr"}
 }
