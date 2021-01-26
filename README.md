@@ -22,9 +22,9 @@ Voici une datavisualisation qui présente les fromages de France selon leur rég
 
 ### Les peintures de Monet
 
-select distinct ?peinture
+"""select distinct ?peinture
 where {
-    ?peinture wdt:P31/wdt:P279* wd:Q3305213 .
+    ?peinture wdt:P31/wdt:P279* wd:Q3305213 ."""
     ?peinture wdt:P170 wd:Q296 .
 }
 
