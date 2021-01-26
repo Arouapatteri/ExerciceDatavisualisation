@@ -18,3 +18,21 @@ Voici une datavisualisation qui présente les fromages de France selon leur rég
 
 <iframe frameborder="0" width="800" height="600" src="https://data.opendatasoft.com/map/embed/liste_des_fromages_francais2/?&static=false&scrollWheelZoom=false"></iframe>
 
+## Requête WikiData
+
+### juste les peintures de monet : 
+
+select distinct ?peinture
+where {
+    ?peinture wdt:P31/wdt:P279* wd:Q3305213 .
+    ?peinture wdt:P170 wd:Q296 .
+}
+
+### avec les labels (via le service wikibase:label) et les images associées
+
+SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
+  ?peinture (wdt:P31/(wdt:P279*)) wd:Q3305213;
+    wdt:P170 wd:Q296.
+  OPTIONAL { ?peinture wdt:P18 ?image. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
+}
