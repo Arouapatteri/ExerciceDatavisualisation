@@ -22,18 +22,12 @@ Voici une datavisualisation qui présente les fromages de France selon leur rég
 
 ### Les peintures de Monet
 
-"""select distinct ?peinture
+```select distinct ?peinture
 where {
-    ?peinture wdt:P31/wdt:P279* wd:Q3305213 ."""
+    ?peinture wdt:P31/wdt:P279* wd:Q3305213 .
     ?peinture wdt:P170 wd:Q296 .
-}
-select DISTINCT ?peinture 
-where {
- ?peinture wdt:P170 wd:Q296.
+}```
 
-SERVICE wikibase:label { #pour récuéprer les labels
-bd:serviceParam wikibase:language "fr,en"}
-}
 
 ### Les peintures de Monet avec les labels (via le service wikibase:label) et les images associées 
 
