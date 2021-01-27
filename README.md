@@ -60,7 +60,7 @@ SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
 
 ````sparql
 
-#defaultView:ImageGrid
+#defaultView:ImageGrid #def + ctrl espace pour l'auto-complétion 
 select DISTINCT ?peinture ?peintureLabel ?image ?localisation ?localisationLabel
 where {
  ?peinture wdt:P170 wd:Q296.
