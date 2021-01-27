@@ -32,6 +32,10 @@ where {
 
 ````
 
+### Résultat 
+
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#select%20distinct%20%3Fpeinture%0Awhere%20%7B%0A%20%20%20%20%3Fpeinture%20wdt%3AP31%2Fwdt%3AP279%2a%20wd%3AQ3305213%20.%0A%20%20%20%20%3Fpeinture%20wdt%3AP170%20wd%3AQ296%20.%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
 
 ### Les peintures de Monet avec les labels (via le service wikibase:label) et les images associées 
 
