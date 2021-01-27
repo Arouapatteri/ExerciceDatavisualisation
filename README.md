@@ -49,7 +49,16 @@ SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
 } 
 
 ````
+
+### Résultat 
+
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%0ASELECT%20DISTINCT%20%3Fpeinture%20%3FpeintureLabel%20%3Fimage%20WHERE%20%7B%0A%20%20%3Fpeinture%20%28wdt%3AP31%2F%28wdt%3AP279%2a%29%29%20wd%3AQ3305213%3B%0A%20%20%20%20wdt%3AP170%20wd%3AQ296.%0A%20%20OPTIONAL%20%7B%20%3Fpeinture%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22.%20%7D%0A%7D%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
 ### Les peintures de Monet avec en option (via OPTIONAL) les collections/lieux de conservation
+
+### Résultat
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#select%20DISTINCT%20%3Fpeinture%20%3FpeintureLabel%20%3Fimage%20%3Flocalisation%20%3FlocalisationLabel%0Awhere%20%7B%0A%20%3Fpeinture%20wdt%3AP170%20wd%3AQ296.%0A%20%3Fpeinture%20wdt%3AP18%20%3Fimage.%0AOPTIONAL%20%7B%3Fpeinture%20wdt%3AP195%20%3Flocalisation%0A%7D%20%20%0A%20%20%0ASERVICE%20wikibase%3Alabel%20%7B%0Abd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
 
 ````sparql
 
