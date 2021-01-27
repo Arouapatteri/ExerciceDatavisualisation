@@ -22,7 +22,7 @@ Voici une datavisualisation qui présente les fromages de France selon leur rég
 
 ### Les peintures de Monet
 
-```
+````sparql
 
 select distinct ?peinture
 where {
@@ -30,12 +30,12 @@ where {
     ?peinture wdt:P170 wd:Q296 .
 }
 
-```
+````
 
 
 ### Les peintures de Monet avec les labels (via le service wikibase:label) et les images associées 
 
-```
+````sparql
 
 SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
   ?peinture (wdt:P31/(wdt:P279*)) wd:Q3305213;
@@ -44,10 +44,10 @@ SELECT DISTINCT ?peinture ?peintureLabel ?image WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr". }
 } 
 
-```
+````
 ### Les peintures de Monet avec en option (via OPTIONAL) les collections/lieux de conservation
 
-```
+````sparql
 
 select DISTINCT ?peinture ?peintureLabel ?image ?localisation ?localisationLabel
 where {
@@ -60,4 +60,4 @@ SERVICE wikibase:label {
 bd:serviceParam wikibase:language "fr"}
 }
 
-```
+````
